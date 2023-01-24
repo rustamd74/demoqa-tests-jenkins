@@ -3,9 +3,10 @@ import allure
 from demoqa_tests.model.data.user import User, State, City, Subject, Gender, Hobbies
 from demoqa_tests.model.pages.practice_form import Practice_form
 
-
 automation_form = Practice_form()
-@ allure.title("Successful fill form")
+
+
+@allure.title("Successful fill form")
 def test_student_registration():
     student = User(first_name='John',
                    last_name='Doe',
