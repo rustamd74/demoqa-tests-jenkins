@@ -1,9 +1,11 @@
 import datetime
-
+import allure
 from demoqa_tests.model.data.user import User, State, City, Subject, Gender, Hobbies
 from demoqa_tests.model.pages.practice_form import Practice_form
 
 
+automation_form = Practice_form()
+@ allure.title("Successful fill form")
 def test_student_registration():
     student = User(first_name='John',
                    last_name='Doe',
@@ -17,8 +19,9 @@ def test_student_registration():
                    address='221b, Baker street',
                    state=State.Uttar_Pradesh,
                    city=City.Lucknow)
-    automation_form = Practice_form()
-    automation_form.open_page()
-    automation_form.fill_form(student)
-
-    automation_form.assert_registration_student(student)
+    with allure.step("Open registration form"):
+        automation_form.open_page()
+    with allure.step("Filling form"):
+        automation_form.fill_form(student)
+    with allure.step("Checking the registration form"):
+        automation_form.assert_registration_student(student)
