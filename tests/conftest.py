@@ -7,6 +7,16 @@ from dotenv import load_dotenv
 from demoqa_tests.utils import attach
 
 
+DEFAULT_BROWSER_VERSION = "100.0"
+
+
+def pytest_addoption(parser):
+    parser.addoption(
+        '--browser_version',
+        default='100.0'
+    )
+
+
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
     load_dotenv()
