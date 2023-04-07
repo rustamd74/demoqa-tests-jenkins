@@ -18,7 +18,7 @@
 
 ### <img width="3%" title="Jenkins" src="https://avatars.githubusercontent.com/u/2520748?v=4"> [Launch of the project в Jenkins](https://jenkins.autotests.cloud/job/qa_diplom_api/)
 ##### Clicking on "Build Now" will start building tests and running them on the server Jenkins.
-![Jenkins_run](/images/screenshots/jenkins.png)
+![Jenkins](/images/screenshots/jenkins.png)
 
 ### <img width="3%" title="Allure Report" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"> Allure report
 ##### Based on the results of passing the tests, an Allure report is generated.
