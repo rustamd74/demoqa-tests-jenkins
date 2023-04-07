@@ -1,6 +1,8 @@
 ## Project of automated UI 
 ### Technologies used
 
+
+
 <p  align="center">
   <code><img width="5%" title="Pycharm" src="images/logo/pycharm.png"></code>
   <code><img width="5%" title="Python" src="images/logo/python.png"></code>
@@ -24,6 +26,7 @@
 
 ### <img width="3%" title="Jenkins" src="https://avatars.githubusercontent.com/u/2520748?v=4"> [Launch of the project в Jenkins](https://jenkins.autotests.cloud/job/qa_diplom_api/)
 ##### Clicking on "Build Now" will start building tests and running them on the server Jenkins.
+
 ![Jenkins](/images/screenshots/jenkins.png)
 
 ### <img width="3%" title="Allure Report" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"> Allure report
